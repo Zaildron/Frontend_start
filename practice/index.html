@@ -3,57 +3,368 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
+    <title>Портфолио Варда В. Е.</title>
 </head>
 
 <body>
     <header>
+        <!-- Делаем шапку: лого, навигация, титульник -->
+        <p style="float: left;"><img src="./assets/images/logo.png"></p>
+        <p><big>Player profile</big></p>
+
         <nav>
-            <ul>
-                <li>Обо мне</li>
-                <li>Навыки</li>
-                <li>Мои работы</li>
-            </ul>
+            <a href="About me">About me</a> | 
+            <a href="My armies">My armies</a> |
+            <a href="My games">My games</a> |
+            <a href="Let's play!">Let's play!</a>
         </nav>
 
-        <div>
-            <h1>Виктор Варда</h1>
-            <h2>Хороший человек</h2>
-            <button>Связаться</button>
-        </div>
+        <section>
+            <h1>Viktor Varda</h1>
+            <h2>Warhammer 40K adept</h2>
+        </section>
+    </header>
 
-        <div>
-            <p>
-                Листать ниже
-            </p>
-            <button>Ниже</button>
-        </div>
-    </header> 
-    
     <main>
-        <h3>Обо мне</h3>
-        <img src="./assets/images/background.jfif" alt="Лев Эль Джонсон">
-        <article>
-            <p>
-                <h4>Биография</h4>
-                <span>
-                    Человек хороший
-                </span>
-            </p>
-            <p>
-                <h4>Семейное положение</h4>
-                <span>
-                    Женат
-                </span>
-            </p>
-            <p>
-                <h4>Девиз</h4>
-                <span>
-                    <i>Если не я, то кто же?</i>
-                </span>
-            </p>
-        </article>
+    <hr>
+    <!-- Линией временно делим "страницы" между собой -->
+
+    <section>
+        <!-- в идеале, чтобы логотип всегда отображался от "страницы" к "странице", но пока непонятно, как этого достичь -->
+        <p style="float: left;"><img src="./assets/images/logo.png"></p>
+        <p><big>Player profile</big></p>
+        
+        <div>
+            <h3>About me</h3>
+            <img src="./assets/images/me.jpg">
+
+            <article>
+                <p>
+                    <h4>Biography</h4>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni quibusdam quasi itaque facere repellendus perspiciatis, aspernatur ut, unde aliquam iure dolorem in laboriosam mollitia neque! Amet, molestias quaerat! Nobis, nemo?</span>
+                </p>
+
+                <p>
+                    <h4>Personal information</h4>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni quibusdam quasi itaque facere repellendus perspiciatis, aspernatur ut, unde aliquam iure dolorem in laboriosam mollitia neque! Amet, molestias quaerat! Nobis, nemo?</span>
+                </p>
+
+                <p>
+                    <h4>Occupation</h4>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni quibusdam quasi itaque facere repellendus perspiciatis, aspernatur ut, unde aliquam iure dolorem in laboriosam mollitia neque! Amet, molestias quaerat! Nobis, nemo?</span>
+                </p>
+
+                <p>
+                    <h4>Hobbies</h4>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni quibusdam quasi itaque facere repellendus perspiciatis, aspernatur ut, unde aliquam iure dolorem in laboriosam mollitia neque! Amet, molestias quaerat! Nobis, nemo?</span>
+                </p>
+
+                <p>
+                    <h4>Warhammer 40k experience</h4>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni quibusdam quasi itaque facere repellendus perspiciatis, aspernatur ut, unde aliquam iure dolorem in laboriosam mollitia neque! Amet, molestias quaerat! Nobis, nemo?</span>
+                </p>
+            </article>
+
+            <!-- кнопка в идеале тоже должна быть на каждой "странице", чтобы быстро можно было вернуть к титульнику -->
+            <button>Back to top</button>
+        </div>
+    </section>
     </main>
+
+    <main>
+        <hr>
+        <!-- Линией временно делим "страницы" между собой -->
+    
+        <section>
+            <!-- в идеале, чтобы логотип всегда отображался от "страницы" к "странице", но пока непонятно, как этого достичь -->
+            <p style="float: left;"><img src="./assets/images/logo.png"></p>
+            <p><big>Player profile</big></p>
+            
+            <!-- на страннице должны быть три картинки, при нажатии на каждую нас должно переносить на соответствующий раздел. Пока непонятно как реализовать, а гуглить лень -->
+            <!-- с картинками будет отдельная истоиия, чтобы их отформатировать под соответствующий размер -->
+
+            <div>
+                <h3>My armies</h3>
+                <article>
+                    <p>
+                        <span>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, similique? Reprehenderit consequuntur minus ullam nesciunt saepe consectetur reiciendis, amet vero odit quam, laborum maxime voluptatem. Optio nesciunt illum maxime voluptate.
+                        </span>
+                    </p>
+                </article>
+
+                <a href="Dark_angels"><img src="./assets/images/DA_selection.jpg"></a>
+                <p><a href="Grey_knights"><img src="./assets/images/GK_selection.jpg"></a></p>
+                <p><a href="Imperial_knights"><img src="./assets/images/IK_option.jpg"></a></p>
+    
+                <!-- кнопка в идеале тоже должна быть на каждой "странице", чтобы быстро можно было вернуть к титульнику -->
+                <button>Back to top</button>
+            </div>
+        </section>
+        </main>   
+        
+        <main>
+            <hr>
+            <!-- Линией временно делим "страницы" между собой -->
+        
+            <section>
+                <!-- в идеале, чтобы логотип всегда отображался от "страницы" к "странице", но пока непонятно, как этого достичь -->
+                <p style="float: left;"><img src="./assets/images/logo.png"></p>
+                <p><big>Player profile</big></p>
+                
+                <!-- на страннице должны быть три картинки, при нажатии на каждую нас должно переносить на соответствующий раздел. Пока непонятно как реализовать, а гуглить лень -->
+                <!-- с картинками будет отдельная истоиия, чтобы их отформатировать под соответствующий размер -->
+    
+                <div>
+                    <h3>Dark angels</h3>
+                    <!-- первые две секции должны занимать пополам верхнюю половину страницы. Третья секция должна быть выпадающим списком с таблицей -->
+                    <section>
+                        <img src="./assets/images/DA_inside.jpg">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto laudantium magnam labore suscipit quaerat dolorum inventore illum deserunt commodi officia tempore reiciendis, maxime vel sapiente nisi iure, quam temporibus omnis.</span>
+                    </section>
+
+                    <section>
+                        <img src="./assets/images/Lion.jpg">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto laudantium magnam labore suscipit quaerat dolorum inventore illum deserunt commodi officia tempore reiciendis, maxime vel sapiente nisi iure, quam temporibus omnis.</span>
+                    </section>
+
+                    <section>
+                        <h4>My Dark angels</h4>
+                        <table>
+                            <tr>
+                                <th>Unit name</th>
+                                <th>Description</th>
+                                <th>Pts total</th>
+                                <th>Number of models</th>
+                                <th>Image</th>
+                            </tr>
+                            <!-- Дальше большой список с описанием и картинками. в идеале сделать, чтобы список раскрывался, а не сразу весь лежал. Можно по группам объеденить и открывать по отдельности? -->
+                            <tr>
+                                <td>Vindicator</td>
+                                <td>The Vindicator is a Rhino-based siege tank that boasts the most devastating weapon in the Space Marines' armoury - the demolisher cannon.</td>
+                                <td>190 pts</td>
+                                <td>1</td>
+                                <td><img src="./assets/images/Vindicator.jpg"></td>
+                            </tr>
+                        </table>
+                        <p>
+                            <strong>Pts total: XXXX</strong>
+                        </p>
+                    </section>
+
+        
+                    <!-- кнопка в идеале тоже должна быть на каждой "странице" группы, чтобы быстро можно было вернуть к группе с выбором -->
+                    <button>Back to armies</button>
+                </div>
+            </section>
+            </main>
+            
+            <main>
+                <hr>
+                <!-- Линией временно делим "страницы" между собой -->
+            
+                <section>
+                    <!-- в идеале, чтобы логотип всегда отображался от "страницы" к "странице", но пока непонятно, как этого достичь -->
+                    <p style="float: left;"><img src="./assets/images/logo.png"></p>
+                    <p><big>Player profile</big></p>
+                    
+                    <!-- на страннице должны быть три картинки, при нажатии на каждую нас должно переносить на соответствующий раздел. Пока непонятно как реализовать, а гуглить лень -->
+                    <!-- с картинками будет отдельная истоиия, чтобы их отформатировать под соответствующий размер -->
+        
+                    <div>
+                        <h3>Grey knights</h3>
+                        <!-- первые две секции должны занимать пополам верхнюю половину страницы. Третья секция должна быть выпадающим списком с таблицей -->
+                        <section>
+                            <img src="./assets/images/GK_inside.jpg">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto laudantium magnam labore suscipit quaerat dolorum inventore illum deserunt commodi officia tempore reiciendis, maxime vel sapiente nisi iure, quam temporibus omnis.</span>
+                        </section>
+    
+                        <section>
+                            <img src="./assets/images/Kaldor-Draigo.jpg">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto laudantium magnam labore suscipit quaerat dolorum inventore illum deserunt commodi officia tempore reiciendis, maxime vel sapiente nisi iure, quam temporibus omnis.</span>
+                        </section>
+    
+                        <section>
+                            <h4>My Grey knights</h4>
+                            <table>
+                                <tr>
+                                    <th>Unit name</th>
+                                    <th>Description</th>
+                                    <th>Pts total</th>
+                                    <th>Number of models</th>
+                                    <th>Image</th>
+                                </tr>
+                                <!-- Дальше большой список с описанием и картинками. в идеале сделать, чтобы список раскрывался, а не сразу весь лежал. Можно по группам объеденить и открывать по отдельности? -->
+                                <tr>
+                                    <td>Castellan Crowe</td>
+                                    <td>Castellan Garran Crowe is the Champion of the Order of Purifiers, and his flawless soul radiates outward in a searing psychic aura.</td>
+                                    <td>75 pts</td>
+                                    <td>1</td>
+                                    <td><img src="./assets/images/Crowe.jpg"></td>
+                                </tr>
+                            </table>
+                            <p>
+                                <strong>Pts total: XXXX</strong>
+                            </p>
+                        </section>
+    
+            
+                        <!-- кнопка в идеале тоже должна быть на каждой "странице" группы, чтобы быстро можно было вернуть к группе с выбором -->
+                        <button>Back to armies</button>
+                    </div>
+                </section>
+                </main>
+                
+                <main>
+                    <hr>
+                    <!-- Линией временно делим "страницы" между собой -->
+                
+                    <section>
+                        <!-- в идеале, чтобы логотип всегда отображался от "страницы" к "странице", но пока непонятно, как этого достичь -->
+                        <p style="float: left;"><img src="./assets/images/logo.png"></p>
+                        <p><big>Player profile</big></p>
+                        
+                        <!-- на страннице должны быть три картинки, при нажатии на каждую нас должно переносить на соответствующий раздел. Пока непонятно как реализовать, а гуглить лень -->
+                        <!-- с картинками будет отдельная истоиия, чтобы их отформатировать под соответствующий размер -->
+            
+                        <div>
+                            <h3>Imperial knights</h3>
+                            <!-- первые две секции должны занимать пополам верхнюю половину страницы. Третья секция должна быть выпадающим списком с таблицей -->
+                            <section>
+                                <img src="./assets/images/IK_inside.jpg">
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto laudantium magnam labore suscipit quaerat dolorum inventore illum deserunt commodi officia tempore reiciendis, maxime vel sapiente nisi iure, quam temporibus omnis.</span>
+                            </section>
+        
+                            <section>
+                                <img src="./assets/images/CanisRex.webp">
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto laudantium magnam labore suscipit quaerat dolorum inventore illum deserunt commodi officia tempore reiciendis, maxime vel sapiente nisi iure, quam temporibus omnis.</span>
+                            </section>
+        
+                            <section>
+                                <h4>My Imperial knights</h4>
+                                <table>
+                                    <tr>
+                                        <th>Unit name</th>
+                                        <th>Description</th>
+                                        <th>Pts total</th>
+                                        <th>Number of models</th>
+                                        <th>Image</th>
+                                    </tr>
+                                    <!-- Дальше большой список с описанием и картинками. в идеале сделать, чтобы список раскрывался, а не сразу весь лежал. Можно по группам объеденить и открывать по отдельности? -->
+                                    <tr>
+                                        <td>Knight Castellan</td>
+                                        <td>Dominus-class Knights are among the largest available to any Knight house. These walking fortresses march relentlessly into the fight, armed with weapons capable of levelling entire armies, gunfire scattering uselessly off their ion shields.</td>
+                                        <td>595 pts</td>
+                                        <td>1</td>
+                                        <td><img src="./assets/images/castellan.jpg"></td>
+                                    </tr>
+                                </table>
+                                <p>
+                                    <strong>Pts total: XXXX</strong>
+                                </p>
+                            </section>
+        
+                
+                            <!-- кнопка в идеале тоже должна быть на каждой "странице" группы, чтобы быстро можно было вернуть к группе с выбором -->
+                            <button>Back to armies</button>
+                        </div>
+                    </section>
+                    </main> 
+
+                    <main>
+                        <hr>
+                        <!-- Линией временно делим "страницы" между собой -->
+                    
+                        <section>
+                            <!-- в идеале, чтобы логотип всегда отображался от "страницы" к "странице", но пока непонятно, как этого достичь -->
+                            <p style="float: left;"><img src="./assets/images/logo.png"></p>
+                            <p><big>Player profile</big></p>
+                            
+                            <!-- на страннице должны быть три картинки, при нажатии на каждую нас должно переносить на соответствующий раздел. Пока непонятно как реализовать, а гуглить лень -->
+                            <!-- с картинками будет отдельная истоиия, чтобы их отформатировать под соответствующий размер -->
+                
+                            <div>
+                                <h3>Win rate</h3>
+                                <article>
+                                    <p>
+                                        <span>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, similique? Reprehenderit consequuntur minus ullam nesciunt saepe consectetur reiciendis, amet vero odit quam, laborum maxime voluptatem. Optio nesciunt illum maxime voluptate.
+                                        </span>
+                                    </p>
+                                </article>
+                
+                                <table>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Matching</th>
+                                        <th>Score</th>
+                                    </tr>
+                                    <tr>
+                                        <th>YYYY.MM.DD</th>
+                                        <th>Viktor vs Opponent</th>
+                                        <th>XX-XX</th>
+                                    </tr>
+                                    <!-- как сделать строку таблицы с ячейками раскрывающимся элементом, чтобы при нажатии показать подробности? -->
+                                </table>
+                    
+                                <!-- кнопка в идеале тоже должна быть на каждой "странице", чтобы быстро можно было вернуть к титульнику -->
+                                <button>Back to top</button>
+                            </div>
+                        </section>
+                        </main>
+                        
+                        <main>
+                            <hr>
+                            <!-- Линией временно делим "страницы" между собой -->
+                        
+                            <section>
+                                <!-- в идеале, чтобы логотип всегда отображался от "страницы" к "странице", но пока непонятно, как этого достичь -->
+                                <p style="float: left;"><img src="./assets/images/logo.png"></p>
+                                <p><big>Player profile</big></p>
+                                
+                                <!-- на страннице должны быть три картинки, при нажатии на каждую нас должно переносить на соответствующий раздел. Пока непонятно как реализовать, а гуглить лень -->
+                                <!-- с картинками будет отдельная истоиия, чтобы их отформатировать под соответствующий размер -->
+                    
+                                <div>
+                                    <h3>Let's play!</h3>
+                                    <article>
+                                        <p>
+                                            <span>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, similique? Reprehenderit consequuntur minus ullam nesciunt saepe consectetur reiciendis, amet vero odit quam, laborum maxime voluptatem. Optio nesciunt illum maxime voluptate.
+                                            </span>
+                                        </p>
+                                    </article>
+                    
+                                    <img src="./assets/images/me.jpg">
+
+                                    <sectiion>
+                                        <table>
+                                            <tr>
+                                                <td><strong>Phone:</strong></td>
+                                                <td>X-XXX-XXX-XX-XX</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Email:</strong></td>
+                                                <td>email@domain.at</td>
+                                            </tr>
+                                        </table>
+
+                                        <div>
+                                            <!-- Геолокация не получилась -->
+                                            <iframe src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463.52431779267664!2d84.97709042215988!3d56.45215716384559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4326ecb6e0823203%3A0x8c7e42092a06fd58!2zVGltZTRmcmllbmRzLCDQsNC90YLQuNC60LDRhNC1LCDRgtCw0LnQvNC60LvRg9Cx!5e0!3m2!1sru!2sru!4v1711126640039!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>"
+                                        </div>
+                                    </sectiion>
+                        
+                                    <!-- кнопка в идеале тоже должна быть на каждой "странице", чтобы быстро можно было вернуть к титульнику -->
+                                    <button>Back to top</button>
+                                </div>
+                            </section>
+                            </main>                        
+
+    <footer>
+        <p style="text-align:center;">Approved by inquisition</p>
+    </footer>
+
 
 </body>
 
