@@ -43,26 +43,30 @@
 
         <section>
             <h3 class="title__h3">My Grey knights</h3>
-            <table>
-                <tr>
-                    <th>Unit name</th>
-                    <th>Description</th>
-                    <th>Pts total</th>
-                    <th>Number of models</th>
-                    <th>Image</th>
-                </tr>
 
-                <tr>
-                    <td>Castellan Crowe</td>
-                    <td>Castellan Garran Crowe is the Champion of the Order of Purifiers, and his flawless soul radiates outward in a searing psychic aura.</td>
-                    <td>75 pts</td>
-                    <td>1</td>
-                    <td><img class="image__sample" src="../assets/images/Crowe.jpg"></td>
-                </tr>
-            </table>
-            <p>
-                <strong>Pts total: XXXX</strong>
-            </p>
+                <!-- Вопрос с раскрываемой таблицей остается. Пока что нашел решение для jquerry, но не могу применить по полному незнанию. -->
+                <section class="section__grid">
+                    <div class="section__grid-item">Unit name</div>
+                    <div class="section__grid-item">Description</div>
+                    <div class="section__grid-item">Pts total</div>
+                    <div class="section__grid-item">Number of models</div>
+                    <div class="section__grid-item">Image</div>
+                    <div class="section__grid-item">Castellan Crowe</div>
+                    <div class="section__grid-item">Castellan Garran Crowe is the Champion of the Order of Purifiers, and his flawless soul radiates outward in a searing psychic aura.</div>
+                    <div class="section__grid-item">75 pts</div>
+                    <div class="section__grid-item">1</div>
+                    <div class="section__grid-item">
+                        <img 
+                            class="image__sample image__toggled" 
+                            src="../assets/images/Crowe.jpg">
+                    </div>
+                </section>
+
+                <section class="section__grid__total">
+                    <div class="section__grid-item"></div>
+                    <div class="section__grid-item"></div>
+                    <div class="section__grid-item">Pts total: XXXX</div>
+                </section>
         </section> 
 
         <button><a href="../index.html#My_armies">Back to armies</a></button>
@@ -73,7 +77,21 @@
         <p>Approved by inquisition</p>
     </footer>
 
-    </main>
+    </main> 
+        <!-- Тут я несколько забежал вперёд при помощи сторонних ресурсов, не до конца разобрался, как именно работает - надо переварить -->
+        <script>
+            var imgs = document.querySelectorAll(".image__toggled");
+                imgs.forEach((img) => {
+                        img.addEventListener("click", toggleImage);
+                    }
+                )
+            function toggleImage(event) {
+                var img =event.target;
+                    img.classList.toggle("image_toggled__on");
+                }
+        </script>
+
+
 </body>
 
 </html>

@@ -44,26 +44,30 @@
 
         <section>
             <h3 class="title__h3">My Imperial knights</h3>
-            <table>
-                <tr>
-                    <th>Unit name</th>
-                    <th>Description</th>
-                    <th>Pts total</th>
-                    <th>Number of models</th>
-                    <th>Image</th>
-                </tr>
-                <!-- Дальше большой список с описанием и картинками. в идеале сделать, чтобы список раскрывался, а не сразу весь лежал. Можно по группам объеденить и открывать по отдельности? -->
-                <tr>
-                    <td>Knight Castellan</td>
-                    <td>Dominus-class Knights are among the largest available to any Knight house. These walking fortresses march relentlessly into the fight, armed with weapons capable of levelling entire armies, gunfire scattering uselessly off their ion shields.</td>
-                    <td>595 pts</td>
-                    <td>1</td>
-                    <td><img class="image__sample" src="../assets/images/castellan.jpg"></td>
-                </tr>
-            </table>
-            <p>
-                <strong>Pts total: XXXX</strong>
-            </p>
+
+            <!-- Вопрос с раскрываемой таблицей остается. Пока что нашел решение для jquerry, но не могу применить по полному незнанию. -->
+                <section class="section__grid">
+                    <div class="section__grid-item">Unit name</div>
+                    <div class="section__grid-item">Description</div>
+                    <div class="section__grid-item">Pts total</div>
+                    <div class="section__grid-item">Number of models</div>
+                    <div class="section__grid-item">Image</div>
+                    <div class="section__grid-item">Knight Castellan</div>
+                    <div class="section__grid-item">Dominus-class Knights are among the largest available to any Knight house. These walking fortresses march relentlessly into the fight, armed with weapons capable of levelling entire armies, gunfire scattering uselessly off their ion shields.</div>
+                    <div class="section__grid-item">595 pts</div>
+                    <div class="section__grid-item">1</div>
+                    <div class="section__grid-item">
+                        <img 
+                            class="image__sample image__toggled" 
+                            src="../assets/images/castellan.jpg">
+                    </div>
+                </section>
+ 
+                <section class="section__grid__total">
+                    <div class="section__grid-item"></div>
+                    <div class="section__grid-item"></div>
+                    <div class="section__grid-item">Pts total: XXXX</div>
+                </section>
         </section>
 
         <button><a href="../index.html#My_armies">Back to armies</a></button>
@@ -74,7 +78,20 @@
         <p>Approved by inquisition</p>
     </footer>
 
-    </main> 
+    </main>     
+        <!-- Тут я несколько забежал вперёд при помощи сторонних ресурсов, не до конца разобрался, как именно работает - надо переварить -->
+        <script>
+            var imgs = document.querySelectorAll(".image__toggled");
+                imgs.forEach((img) => {
+                        img.addEventListener("click", toggleImage);
+                    }
+                )
+            function toggleImage(event) {
+                var img =event.target;
+                    img.classList.toggle("image_toggled__on");
+                }
+        </script>
+
 </body>
 
 </html>
