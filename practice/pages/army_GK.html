@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grey Knights</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+</head>
+
+<body>
+<main>
+    <section>
+        <header class="logo">
+            <p><img class="logo__image" src="../assets/images/logo.png"></p>
+            <p class="logo__text">Player profile</p>
+        </header>
+
+        <h3 class="title__h3">Grey knights</h3>
+
+        <div class="preview">
+            <section class="preview__content">
+                <img class="image" src="../assets/images/GK_inside.jpg">
+                <span class="about__card glass">
+                    <p>"One unbreakable shield against the coming darkness, one last blade forged in defiance of fate, let them be my legacy to the galaxy I conquered, and my final gift to the species I failed."</p>
+                    <p> -Inscription upon the Arcus Daemonica, attributed to the Emperor of Mankind.</p>
+                </span>
+            </section>  
+            <section class="preview__content">
+                <img class="image" src="../assets/images/Kaldor-Draigo.jpg">
+                <span class="about__card glass">
+                    <p>Kaldor Draigo is the Supreme Grand Master of the Grey Knights and a warrior beyond reckoning. As a lowly Battle-Brother he banished the Daemon Prince M'kar the Reborn and he has risen steadily through the ranks to become the Grand Master of the most secretive Chapter of Space Marines. Yet ever since his battle with M'kar, Draigo has been cursed to a life within the Warp, doomed to walk within the Realm of Chaos. To remain pure when constantly assailed by Chaos shows such fortitude and personal strength that it is beyond measure. But while Draigo lives, he will prevail and one day, he will return.</p>
+                </span>
+            </section>  
+        </div>
+
+        <section>
+            <h3 class="title__h3">My Grey knights</h3>
+
+                <!-- Вопрос с раскрываемой таблицей остается. Пока что нашел решение для jquerry, но не могу применить по полному незнанию. -->
+                <section class="section__grid">
+                    <div class="section__grid-item">Unit name</div>
+                    <div class="section__grid-item">Description</div>
+                    <div class="section__grid-item">Pts total</div>
+                    <div class="section__grid-item">Number of models</div>
+                    <div class="section__grid-item">Image</div>
+                    <div class="section__grid-item">Castellan Crowe</div>
+                    <div class="section__grid-item">Castellan Garran Crowe is the Champion of the Order of Purifiers, and his flawless soul radiates outward in a searing psychic aura.</div>
+                    <div class="section__grid-item">75 pts</div>
+                    <div class="section__grid-item">1</div>
+                    <div class="section__grid-item">
+                        <img 
+                            class="image__sample image__toggled" 
+                            src="../assets/images/Crowe.jpg">
+                    </div>
+                </section>
+
+                <section class="section__grid__total">
+                    <div class="section__grid-item"></div>
+                    <div class="section__grid-item"></div>
+                    <div class="section__grid-item">Pts total: XXXX</div>
+                </section>
+        </section> 
+
+        <button><a href="../index.html#My_armies">Back to armies</a></button>
+
+    </section>
+
+    <footer class="footer__armies">
+        <p>Approved by inquisition</p>
+    </footer>
+
+    </main> 
+        <!-- Тут я несколько забежал вперёд при помощи сторонних ресурсов, не до конца разобрался, как именно работает - надо переварить -->
+        <script>
+            var imgs = document.querySelectorAll(".image__toggled");
+                imgs.forEach((img) => {
+                        img.addEventListener("click", toggleImage);
+                    }
+                )
+            function toggleImage(event) {
+                var img =event.target;
+                    img.classList.toggle("image_toggled__on");
+                }
+        </script>
+
+
+</body>
+
+</html>
