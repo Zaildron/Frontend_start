@@ -1,0 +1,46 @@
+@import "../../constants/typography.scss";
+
+%logo__behaviour{
+    display:flex;
+    position: sticky;
+
+    margin-top: 100px; 
+}
+.logo{
+    &__about, 
+    &__armies, 
+    &__winrate,
+    &__letsplay{
+        @extend %logo__behaviour;
+    }
+
+    &__image{
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    &__text{
+        @include h1;
+        margin: 16px 0;
+        padding: 0px;
+        white-space: nowrap;
+    
+        display: flex;
+        align-self: center;
+    
+        position: relative;
+        left: 10px;
+    }
+
+    @media screen and (min-width: 800px) {
+
+    
+    }
+
+    @media screen and (min-width: 1000px) {
+        &__image{
+            width: auto;
+        }
+    }
+}

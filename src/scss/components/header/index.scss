@@ -1,0 +1,67 @@
+@import "./logo.scss";
+@import "./navigation.scss";
+
+.the_header{
+    background: url("../assets/images/background.jfif") no-repeat center fixed;
+
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    align-items: stretch;
+    z-index: 1000;
+    padding: 0;
+    width: 100%;
+
+    border-right: 1px solid transparent;
+
+    &__logo,
+    &__navigation{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    @media screen and (min-width: 800px) {
+        flex-direction: row;;
+        padding: 0 16px;
+        justify-content: space-between;
+
+        &__logo,
+        &__navigation{
+            margin: 0 16px;
+            padding: 0;
+            width: auto;
+        }
+        &__logo{
+            width: 300px;
+        }
+
+        &__navigation{
+            align-self: flex-start;
+            margin: 0;
+
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        justify-content: stretch;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 120px;
+
+        &__logo{
+            display: flex;
+            flex-direction: row;
+            width: auto;
+        }
+
+        &__navigation{
+            display: flex;
+            flex-grow: 0;
+            flex-shrink: 0;
+            align-self: center;
+        }
+    }
+}

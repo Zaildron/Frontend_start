@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grey Knights</title>
+    <title>Imperial Knights</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,62 +12,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
-<main>
-    <section>
-        <header class="logo">
-            <p><img class="logo__image" src="../assets/images/logo.png"></p>
-            <p class="logo__text">Player profile</p>
-        </header>
 
-        <h3 class="title__h3">Grey knights</h3>
+    <header class="the_header">
+        <a class="the_header__logo" href="/">
+            <img class="logo__image" src="../assets/images/logo.png">
+            <span class="logo__text">Player profile</span>
+        </a>
+    </header>
+
+<main>     
+    <section>
+        <h3 class="title__h3">Imperial knights</h3>
 
         <div class="preview">
             <section class="preview__content">
-                <img class="image" src="../assets/images/GK_inside.jpg">
+                <img class="image" src="../assets/images/IK_inside.jpg">
                 <span class="about__card glass">
-                    <p>"One unbreakable shield against the coming darkness, one last blade forged in defiance of fate, let them be my legacy to the galaxy I conquered, and my final gift to the species I failed."</p>
-                    <p> -Inscription upon the Arcus Daemonica, attributed to the Emperor of Mankind.</p>
+                    <p class="preview__content__quote">"Let the power of your Knight flow through your veins. Let the ghosts of your throne whisper wisdom into your mind. Let steel be your sinews and fire be your fists. Become your Knight, as it becomes you, and through symbiosis ascend. So shall you become. So shall you protect your people and slaughter your foes."</p>
+                    <p> — Sixth Canticle of the Ritual of Becoming</p>
                 </span>
-            </section>  
+            </section>
             <section class="preview__content">
-                <img class="image" src="../assets/images/Kaldor-Draigo.jpg">
+                <img class="image" src="../assets/images/CanisRex.webp">
                 <span class="about__card glass">
-                    <p>Kaldor Draigo is the Supreme Grand Master of the Grey Knights and a warrior beyond reckoning. As a lowly Battle-Brother he banished the Daemon Prince M'kar the Reborn and he has risen steadily through the ranks to become the Grand Master of the most secretive Chapter of Space Marines. Yet ever since his battle with M'kar, Draigo has been cursed to a life within the Warp, doomed to walk within the Realm of Chaos. To remain pure when constantly assailed by Chaos shows such fortitude and personal strength that it is beyond measure. But while Draigo lives, he will prevail and one day, he will return.</p>
+                    <p class="preview__content__quote">"The dark forces that assail Humanity will never cease their attack, and so neither shall I. The Traitors, the Heretics, the aliens – they began this fight, but we shall be the ones to finish it. The Emperor expects no less. Our enemies wield terror and cruelty as their weapons, thinking they can cow us into submission. I wield a crushing gauntlet and a damned enormous laser as mine, and I shall never submit. Were I a betting man, my lord, I know where I'd put my coin."</p>
+                    <p> —Sir Hekhtur the Chainbreaker, to Governor Doslyn before the Battle of Narsul Sound</p>
                 </span>
-            </section>  
+            </section>
         </div>
 
         <section>
-            <h3 class="title__h3">My Grey knights</h3>
+            <h3 class="title__h3">My Imperial knights</h3>
 
-                <!-- Вопрос с раскрываемой таблицей остается. Пока что нашел решение для jquerry, но не могу применить по полному незнанию. -->
+            <!-- Вопрос с раскрываемой таблицей остается. Пока что нашел решение для jquerry, но не могу применить по полному незнанию. -->
                 <section class="section__grid">
                     <div class="section__grid-item">Unit name</div>
                     <div class="section__grid-item">Description</div>
                     <div class="section__grid-item">Pts total</div>
                     <div class="section__grid-item">Number of models</div>
                     <div class="section__grid-item">Image</div>
-                    <div class="section__grid-item">Castellan Crowe</div>
-                    <div class="section__grid-item">Castellan Garran Crowe is the Champion of the Order of Purifiers, and his flawless soul radiates outward in a searing psychic aura.</div>
-                    <div class="section__grid-item">75 pts</div>
+                    <div class="section__grid-item">Knight Castellan</div>
+                    <div class="section__grid-item">Dominus-class Knights are among the largest available to any Knight house. These walking fortresses march relentlessly into the fight, armed with weapons capable of levelling entire armies, gunfire scattering uselessly off their ion shields.</div>
+                    <div class="section__grid-item">595 pts</div>
                     <div class="section__grid-item">1</div>
                     <div class="section__grid-item">
                         <img 
                             class="image__sample image__toggled" 
-                            src="../assets/images/Crowe.jpg">
+                            src="../assets/images/castellan.jpg">
                     </div>
                 </section>
-
+ 
                 <section class="section__grid__total">
                     <div class="section__grid-item"></div>
                     <div class="section__grid-item"></div>
                     <div class="section__grid-item">Pts total: XXXX</div>
                 </section>
-        </section> 
+        </section>
 
         <button><a href="../index.html#My_armies">Back to armies</a></button>
 
@@ -77,7 +81,7 @@
         <p>Approved by inquisition</p>
     </footer>
 
-    </main> 
+    </main>     
         <!-- Тут я несколько забежал вперёд при помощи сторонних ресурсов, не до конца разобрался, как именно работает - надо переварить -->
         <script>
             var imgs = document.querySelectorAll(".image__toggled");
@@ -90,7 +94,6 @@
                     img.classList.toggle("image_toggled__on");
                 }
         </script>
-
 
 </body>
 

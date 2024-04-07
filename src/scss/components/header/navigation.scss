@@ -1,0 +1,24 @@
+@import "../../constants/glass.scss";
+
+.navigation{
+    @extend .glass;
+    display: flex;
+    justify-content: center;
+    margin-left: 16px;
+    margin-right: 16px;
+
+    &__element{
+        font-size: 30px;
+        padding: 10px;
+    
+        color: white; 
+    }
+
+    @media screen and (min-width: 800px) {
+        justify-self: flex-end;
+        margin: 0;
+    }
+
+    @media screen and (min-width: 1000px) {
+    }
+}
