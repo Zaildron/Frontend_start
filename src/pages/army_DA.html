@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Angels</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+
+    <header class="the_header">
+        <a class="the_header__logo" href="/">
+            <img class="logo__image" src="../assets/images/logo.png">
+            <span class="logo__text">Player profile</span>
+        </a>
+    </header>
+
+    <main>    
+            <section>   
+                <div>
+                    <h3 class="title__h3">Dark angels</h3>
+                    
+                    <div class="preview">
+                        <section class="preview__content">
+                            <img class="image" src="../assets/images/DA_inside.jpg">
+                            <span class="about__card glass">
+                                <p class="preview__content__quote">"Since the founding of their Legion at the birth of the Imperium, the Space Marines of the Dark Angels have been dreaded by their enemies and held in awe by those they protect. Stubborn and relentless in battle, ever vigilant and zealous in their pursuit of their duties, the Dark Angels are among the Emperor's most faithful servants. Yet, it was not always so. For ten millennia the Dark Angels have harboured a sinister secret, an act so terrible and shameful it threatens everything the Dark Angels hold most dear – and may yet bring them eternal damnation."</p>
+                                <p> — Inquisitor Bastalek Grim</p>
+                            </span>
+                        </section>
+
+                        <section class="preview__content">
+                            <img class="image" src="../assets/images/Lion.jpg">
+                            <span class="about__card glass">
+                                <p>The First. The Son of the Forest. The Master of Caliban. The Primarch of the Dark Angels.</p>
+                                <p>Lion El'Jonson stalks from mist-wreathed shadow realms like an ancient questing knight, hunting the galaxy's myriad terrors. With his immense blade, Fealty, the Primarch cleaves apart the most heinous of monstrosities, while the Emperor's Shield erupts in blazes of light and force in response to his foes' savage blows.</p>
+                            </span>
+                        </section>
+                    </div>
+
+                    <!-- Вопрос с раскрываемой таблицей остается. Пока что нашел решение для jquerry, но не могу применить по полному незнанию. -->
+                    <section>
+                        <h3 class="title__h3">My Dark angels</h3>
+                        <section class="section__grid">
+                            <div class="section__grid-item">Unit name</div>
+                            <div class="section__grid-item">Description</div>
+                            <div class="section__grid-item">Pts total</div>
+                            <div class="section__grid-item">Number of models</div>
+                            <div class="section__grid-item">Image</div>
+                            <div class="section__grid-item">Vindicator</div>
+                            <div class="section__grid-item">The Vindicator is a Rhino-based siege tank that boasts the most devastating weapon in the Space Marines' armoury - the demolisher cannon.</div>
+                            <div class="section__grid-item">190 pts</div>
+                            <div class="section__grid-item">1</div>
+                            <div class="section__grid-item">
+                                <img 
+                                    class="image__sample image__toggled" 
+                                    src="../assets/images/Vindicator.jpg">
+                            </div>
+                        </section>
+
+                        <section class="section__grid__total">
+                            <div class="section__grid-item"></div>
+                            <div class="section__grid-item">Pts total:</div>
+                            <div class="section__grid-item">190</div>
+                        </section>
+                    </section>
+
+                    <button><a href="../index.html#My_armies">Back to armies</a></button>
+                </div>
+            </section>
+
+        <footer class="footer__armies">
+            <p>Approved by inquisition</p>
+        </footer>
+
+            </main>
+
+                <!-- Тут я несколько забежал вперёд при помощи сторонних ресурсов, не до конца разобрался, как именно работает - надо переварить -->
+                <script>
+                    var imgs = document.querySelectorAll(".image__toggled");
+                        imgs.forEach((img) => {
+                                img.addEventListener("click", toggleImage);
+                            }
+                        )
+                    function toggleImage(event) {
+                        var img =event.target;
+                            img.classList.toggle("image_toggled__on");
+                        }
+                </script>
+
+</body>
+
+</html>

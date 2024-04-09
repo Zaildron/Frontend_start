@@ -1,4 +1,8 @@
-/* Общие стили */
+@import "./components/header/index.scss";
+@import "./constants/glass.scss";
+@import "./constants/typography.scss";
+
+
 * {
     color: white;
 
@@ -9,93 +13,25 @@
 
 body{
     height: 100vh;
-    background: url("../images/background.jfif") no-repeat center fixed;
+    background: url("../assets/images/background.jfif") no-repeat center fixed;
 }
 
 #first_page{
     height: 100vh;
 }
 
-.glass{
-    background: rgba(255, 255, 255, 0.22);
+.map{
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
-    border: 1px solid rgba(255, 255, 255, 0.42);
+    width: 100%; 
+    height: 450px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-/* Стили шапки */
-header{
-    display:flex;
-    position: sticky;
-}
-
-.logo__about{
-    display:flex;
-    position: sticky;
-
-    margin-top: 100px;
-}
-
-.logo__armies{
-    display:flex;
-    position: sticky;
-
-    margin-top: 100px;
-}
-
-.logo__winrate{
-    display:flex;
-    position: sticky;
-
-    margin-top: 100px;
-}
-
-.logo__letsplay{
-    display:flex;
-    position: sticky;
-
-    margin-top: 100px;
-}
-
-.logo__image{
-    width: 200px;
-    position: relative;
-    left: 10px;
-}
-
-.logo__text{
-    font-size: 60px;
-    margin: 0px;
-
-    display: flex;
-    align-self: center;
-
-    position: relative;
-    left: 10px;
-}
-
-.navigation{
-    position: absolute;
-    right: 10px;
-
-    display: flex;
-    align-self: center;
-}
-
-.navigation__element{
-    font-size: 30px;
-    padding: 10px;
-}
 
 /* Стили заголовков */
 .title__h1{
-    display: flex;
-    justify-content: center;
-    padding-top: 150px;
-    margin: 0px;
-    font-size: 60px;
+    @include h1;
 }
 
 .title__h2{
@@ -146,6 +82,12 @@ header{
     gap: 45px;   
 }
 
+.about__content__contact{
+    display: flex;
+    justify-content: center; 
+    gap: 45px;   
+}
+
 .army{
     height: 100vh;
 }
@@ -173,11 +115,33 @@ header{
     padding: 5px;
 }
 
+.section__article{
+    text-align: center;
+}
+
 .section__grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.section__grid__games{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    justify-self: center;
+}
+
+.section__grid__games__details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    justify-self: center;
 }
 
 .section__grid__total{
@@ -252,11 +216,15 @@ footer{
 
 /* Стили кнопок */
 button{
-    background-color:black; 
+    background-color:black;
     font-size: 30px;
     float: right;
     border-radius: 15px;  
     margin: 8px; 
+}
+
+.button__text{
+    color: white;
 }
 
 .button__reset{
