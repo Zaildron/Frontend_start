@@ -8,7 +8,7 @@
     margin-right: 16px;
 
     &__element{
-        font-size: 30px;
+        font-size: 16px;
         padding: 10px;
     
         color: white; 
@@ -17,8 +17,15 @@
     @media screen and (min-width: 800px) {
         justify-self: flex-end;
         margin: 0;
+        
+        &__element{
+            font-size: 30px;
+        }
     }
 
     @media screen and (min-width: 1000px) {
+        &__element{
+            font-size: 30px;
+        }
     }
 }

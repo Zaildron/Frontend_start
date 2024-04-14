@@ -6,6 +6,8 @@ const cssnano = require('cssnano');
 const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 const clean = require('gulp-clean');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
 
 const SRC = "src";
 
@@ -13,6 +15,7 @@ const PATHS = {
     src: SRC,
     dist: 'dist',
     scss: `${SRC}/scss/**/*.scss`,
+    js: `${SRC}/scripts/**/*.js`,
     html: `${SRC}/**/*.html`,
     images: `${SRC}/assets/images/**/*.*`
 };
@@ -39,6 +42,7 @@ function cleanDist() {
 function serve() {
     watch('src/scss/**/*.scss', buildScss);
     watch('src/**/*.html', buildHtml);
+    watch(PATHS.js, buildJs);
 }
 
 function createDevServer() {
@@ -67,10 +71,19 @@ function buildScss() {
         .pipe(browserSync.stream());
 }
 
+function buildJs() {
+    return src(PATHS.js)
+        .pipe(concat('bundle.js'))
+        .pipe(uglify())
+        .pipe(dest(`${PATHS.src}/js`))
+        .pipe(dest(`${PATHS.dist}/js`))
+        .pipe(browserSync.stream());
+}
+
 exports.sass = buildScss;
 exports.html = buildHtml;
 exports.copy = copy;
 exports.cleanDist = cleanDist;
 
-exports.build = series(cleanDist, buildScss, buildHtml, copy);
-exports.default = series(buildScss, parallel(createDevServer, serve));
+exports.build = series(cleanDist, buildScss, buildJs, buildHtml, copy);
+exports.default = series(buildScss, buildJs, parallel(createDevServer, serve));

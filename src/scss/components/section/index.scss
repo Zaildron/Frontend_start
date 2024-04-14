@@ -1,0 +1,45 @@
+@import "./about.scss";
+@import "./armies.scss";
+
+.the_section{
+    &__description{
+        text-align: center;    
+    }
+
+    &__text{
+        padding: 10px;
+    }
+
+    &__buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        gap: 45px; 
+    }
+
+    &__image{
+        display: flex;
+        padding: 10px;
+        gap: 16px;
+    }
+
+    @media screen and (min-width: 800px) {
+
+    }
+
+    @media screen and (min-width: 1000px) {
+        height: 100vh;
+
+        &__description{
+            text-align: center;    
+        }
+    
+        &__buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center; 
+            gap: 45px; 
+        }
+    }
+}

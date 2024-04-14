@@ -1,12 +1,12 @@
 @mixin h1{
     display: flex;
     justify-content: center;
-    padding-top: 150px;
+    padding-top: 300px;
     margin: 0px;
-    font-size: 32px; 
+    font-size: 20px; 
 
     @media screen and (min-width: 800px) {
-        font-size: 42px;    
+        font-size: 42px; 
     }
 
     @media screen and (min-width: 1000px) {
