@@ -17,7 +17,7 @@
 
 <body>
 
-    <header class="the_header">
+    <header class="the_header__armies">
         <a class="the_header__logo" href="/">
             <img class="logo__image" src="../assets/images/logo.png">
             <span class="logo__text">Player profile</span>
@@ -29,8 +29,8 @@
                 <div>
                     <h3 class="title__h3">Dark angels</h3>
                     
-                    <div class="preview">
-                        <section class="preview__content">
+                    <div class="armies-section">
+                        <section class="armies-section__content">
                             <img class="image" src="../assets/images/DA_inside.jpg">
                             <span class="about__card glass">
                                 <p class="preview__content__quote">"Since the founding of their Legion at the birth of the Imperium, the Space Marines of the Dark Angels have been dreaded by their enemies and held in awe by those they protect. Stubborn and relentless in battle, ever vigilant and zealous in their pursuit of their duties, the Dark Angels are among the Emperor's most faithful servants. Yet, it was not always so. For ten millennia the Dark Angels have harboured a sinister secret, an act so terrible and shameful it threatens everything the Dark Angels hold most dear – and may yet bring them eternal damnation."</p>
@@ -38,7 +38,7 @@
                             </span>
                         </section>
 
-                        <section class="preview__content">
+                        <section class="armies-section__content">
                             <img class="image" src="../assets/images/Lion.jpg">
                             <span class="about__card glass">
                                 <p>The First. The Son of the Forest. The Master of Caliban. The Primarch of the Dark Angels.</p>
@@ -73,10 +73,10 @@
                             <div class="section__grid-item">190</div>
                         </section>
                     </section>
-
-                    <button><a href="../index.html#My_armies">Back to armies</a></button>
                 </div>
             </section>
+
+        <button><a href="../index.html#My_armies">Back to armies</a></button>
 
         <footer class="footer__armies">
             <p>Approved by inquisition</p>
@@ -84,18 +84,7 @@
 
             </main>
 
-                <!-- Тут я несколько забежал вперёд при помощи сторонних ресурсов, не до конца разобрался, как именно работает - надо переварить -->
-                <script>
-                    var imgs = document.querySelectorAll(".image__toggled");
-                        imgs.forEach((img) => {
-                                img.addEventListener("click", toggleImage);
-                            }
-                        )
-                    function toggleImage(event) {
-                        var img =event.target;
-                            img.classList.toggle("image_toggled__on");
-                        }
-                </script>
+    <script src="../js/bundle.js"></script>
 
 </body>
 

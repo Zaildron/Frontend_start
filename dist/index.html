@@ -28,10 +28,10 @@
         </a>
         <div class="the_header__navigation">
             <nav class="navigation">
-                <a class="navigation__element" href="#About_me">About me</a>
-                <a class="navigation__element" href="#My_armies">My armies</a>
-                <a class="navigation__element" href="#My_games">My games</a>
-                <a class="navigation__element" href="#Let's_play!">Let's play!</a>
+                <a class="navigation__element" href="#About_me">About</a>
+                <a class="navigation__element" href="#My_armies">Armies</a>
+                <a class="navigation__element" href="#My_games">Games</a>
+                <a class="navigation__element" href="#Let's_play!">Contact</a>
             </nav>
         </div>
     </header>
@@ -49,14 +49,13 @@
             <p>Approved by inquisition</p>
         </footer>
     </section>
+        
+        <h3 id="About_me" class="title__h3">About me</h3>
+        <section class="the_section">
+            <div class="the_section__about"> 
+                <img class="the_section__about__image" src="./assets/images/me.jpg">
 
-        <section class="about">
-            <h3 id="About_me" class="title__h3">About me</h3>
-
-            <div class="about__content">
-                <img class="image__me" src="./assets/images/me.jpg">
-
-                <article class="about__content__text glass">
+                <article class="the_section__about__text glass">
                     <div>
                         <h4 class="title__h4">Personal information</h4>
                         <p>Born and live in Tomsk. Age 35. Happy husbond and father.</p>
@@ -84,16 +83,16 @@
     <!-- Мои армии -->
     <main>
     
-        <section class="army">
+        <section class="the_section">
             <div>
                 <h3 class="title__h3" id="My_armies">My armies</h3>
                 <article>
-                    <p class="army_selection">
+                    <p class="the_section__description">
                             Click the image to see details on my army collection.
                     </p>
                 </article>
 
-                <div class="about__content__armies">
+                <div class="the_section__buttons">
                     <a href="./pages/army_DA.html"><img class="image__army" src="./assets/images/DA_selection.jpg"></a>
                     <a href="./pages/army_GK.html"><img class="image__army" src="./assets/images/GK_selection.jpg"></a>
                     <a href="./pages/army_IK.html"><img class="image__army" src="./assets/images/IK_option.jpg"></a>
@@ -103,6 +102,22 @@
         </main>                
 
     <!-- Результаты игр -->
+    <!-- Таблицу удалил - не соотносится с лэндингом. Надо сделать таблицу (с навешанным аккордеоном) наподобии My_armies:
+        1. поля головной строки: 
+            1) YYYY.MM.DD; 
+            2) моя фракция; 
+            3) фракция оппонента; 
+            4) итог (победа, проигрыш, ничья); 
+            5) итоговый счет;
+            6) картинка с деталями 
+        2. ограничение показа в 10 строк
+        3. пагинация (1, 2, 3, ...) 
+        4. сортировка по первым четырям столбцам:
+            1) от большего к меньшему
+            2) от меньшего к большему
+            3) поиск по значению (столбцы 2-4)
+        5. кнопка на добавление новых строк
+        -->
     <main>
         <section>
             <div>
@@ -114,239 +129,8 @@
                 </article>
             </div>
 
-            <section class="section__grid__games">
-                <div class="section__grid-item">Date</div>
-                <div class="section__grid-item">Matching</div>
-                <div class="section__grid-item">Score</div>
-                <div class="section__grid-item">2024.03.30</div>
-                <div class="section__grid-item">Viktor vs Nikolai</div>
-                <div class="section__grid-item">07-13</div>
-            </section>
-
-            <p></p>
-
-            <section class="section__grid__games__details">
-                <div class="section__grid-item">Nikolai</div>
-            </section>
-
-            <section class="section__grid__games__details">
-                <div class="section__grid-item">Sites of power</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">-</div>
-                <div class="section__grid-item">9</div>
-                <div class="section__grid-item">9</div>
-                <div class="section__grid-item">15</div>
-                <div class="section__grid-item">9</div>
-                <div class="section__grid-item">42/50</div>
-
-                <div class="section__grid-item">Assasination</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">-</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">Behind enemy lines</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">-</div>
-                <div class="section__grid-item">5</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">Defend stronghold</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">-</div>
-                <div class="section__grid-item">3</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">Overwhelming force</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">3</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">Engage on all fronts</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">-</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">Investigate signals</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">-</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">Deploy teleport homer</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">5</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">Area denial</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">5</div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">Extend battle lines</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">5</div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">CP remaining</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">1</div>
-                <div class="section__grid-item">-</div>
-                <div class="section__grid-item">1</div>
-                <div class="section__grid-item">2</div>
-                <div class="section__grid-item">1</div>
-                <div class="section__grid-item"></div>
-            </section>
-
-            <p></p>
-
-            <section class="section__grid__games__details">
-                <div class="section__grid-item">Viktor</div>
-            </section>
-
-            <section class="section__grid__games__details">
-                <div class="section__grid-item">Sites of power</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">-</div>
-                <div class="section__grid-item">6</div>
-                <div class="section__grid-item">6</div>
-                <div class="section__grid-item">6</div>
-                <div class="section__grid-item">12</div>
-                <div class="section__grid-item">30/50</div>
-
-                <div class="section__grid-item">Overwhelming force</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">-</div>
-                <div class="section__grid-item">-</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">Bring it down</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">-</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">Investigate signals</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">-</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">Extend battle lines</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">5</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">Engage on all fronts</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">-</div>
-                <div class="section__grid-item">3</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">Defend stronghold</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">3</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">Capture enemy outpost</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">5</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">Area denial</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">-</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">Deploy teleport homer</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">5</div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">Behind enemy lines</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">3</div>
-                <div class="section__grid-item"></div>
-
-                <div class="section__grid-item">CP remaining</div>
-                <div class="section__grid-item"></div>
-                <div class="section__grid-item">1</div>
-                <div class="section__grid-item">2</div>
-                <div class="section__grid-item">1</div>
-                <div class="section__grid-item">2</div>
-                <div class="section__grid-item">2</div>
-                <div class="section__grid-item"></div>
-            </section>
         </section>
-        </main>
+    </main>
                         
     <!-- Контакты -->
     <main>
@@ -369,7 +153,9 @@
             </div>
         </section>                      
     </main> 
-        
+     
+    <script src="./js/bundle.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>

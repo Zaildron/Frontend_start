@@ -1,4 +1,5 @@
 @import "./components/header/index.scss";
+@import "./components/section/index.scss";
 @import "./constants/glass.scss";
 @import "./constants/typography.scss";
 
@@ -30,9 +31,6 @@ body{
 
 
 /* Стили заголовков */
-.title__h1{
-    @include h1;
-}
 
 .title__h2{
     display: flex;
@@ -57,43 +55,16 @@ body{
 }
 
 /* Стили страниц */
-.about{
-
-}
-
 .about__card{
     width: 300px;
     padding: 5px;
 }
 
-.about__content{
-    display: flex;
-    padding: 10px;
-    gap: 16px;
-}
-
-.about__content__text{
-    padding: 10px;
-}
-
-.about__content__armies{
-    display: flex;
-    justify-content: center; 
-    gap: 45px;   
-}
-
 .about__content__contact{
     display: flex;
     justify-content: center; 
-    gap: 45px;   
-}
-
-.army{
-    height: 100vh;
-}
-
-.army_selection{
-    text-align: center;
+    gap: 45px;
+    padding: 16px;   
 }
 
 .preview{
@@ -180,12 +151,6 @@ footer{
 /* Стили картинок */
 .image{
     width: 300px;
-    border-radius: 15px;
-}
-
-.image__me{
-    max-width: 300px;
-    min-width: 300px;
     border-radius: 15px;
 }
 
