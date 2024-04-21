@@ -13,6 +13,7 @@
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -50,32 +51,35 @@
                     <!-- Вопрос с раскрываемой таблицей остается. Пока что нашел решение для jquerry, но не могу применить по полному незнанию. -->
                     <section>
                         <h3 class="title__h3">My Dark angels</h3>
-                        <section class="section__grid">
-                            <div class="section__grid-item">Unit name</div>
-                            <div class="section__grid-item">Description</div>
-                            <div class="section__grid-item">Pts total</div>
-                            <div class="section__grid-item">Number of models</div>
-                            <div class="section__grid-item">Image</div>
-                            <div class="section__grid-item">Vindicator</div>
-                            <div class="section__grid-item">The Vindicator is a Rhino-based siege tank that boasts the most devastating weapon in the Space Marines' armoury - the demolisher cannon.</div>
-                            <div class="section__grid-item">190 pts</div>
-                            <div class="section__grid-item">1</div>
-                            <div class="section__grid-item">
-                                <img 
-                                    class="image__sample image__toggled" 
-                                    src="../assets/images/Vindicator.jpg">
-                            </div>
-                        </section>
+                        <form>
+                            <section id="entry" class="section__grid">
+                                <div class="section__grid-item">Unit name</div>
+                                <div class="section__grid-item">Description</div>
+                                <div class="section__grid-item">Pts total</div>
+                                <div class="section__grid-item">Number of models</div>
+                                <div class="section__grid-item">Image</div>
+                                <div class="section__grid-item">Vindicator</div>
+                                <div class="section__grid-item">The Vindicator is a Rhino-based siege tank that boasts the most devastating weapon in the Space Marines' armoury - the demolisher cannon.</div>
+                                <div class="section__grid-item">190 pts</div>
+                                <div class="section__grid-item">1</div>
+                                <div class="section__grid-item">
+                                    <img 
+                                        class="image__sample image__toggled" 
+                                        src="../assets/images/Vindicator.jpg">
+                                </div>
+                            </section>
 
-                        <section class="section__grid__total">
-                            <div class="section__grid-item"></div>
-                            <div class="section__grid-item">Pts total:</div>
-                            <div class="section__grid-item">190</div>
-                        </section>
+                            <section class="section__grid__total">
+                                <div class="section__grid-item"></div>
+                                <div class="section__grid-item">Pts total:</div>
+                                <div class="section__grid-item">190</div>
+                            </section>
+                            <button id="create-army-entry" data-action="create-entry-line">Add</button>
+                        </form>
                     </section>
                 </div>
             </section>
-
+        
         <button><a href="../index.html#My_armies">Back to armies</a></button>
 
         <footer class="footer__armies">
@@ -83,9 +87,9 @@
         </footer>
 
             </main>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
     <script src="../js/bundle.js"></script>
-
 </body>
 
 </html>
